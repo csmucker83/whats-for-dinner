@@ -6,36 +6,30 @@
   </head>
   <body>
     <header class="header">
-      <h3 class="">What's for Dinner?</h3>
+      <h3 class="heading">What's for Dinner?</h3>
       <button class="recipe-add">ADD A RECIPE</button>
     </header>
-    <main class="main-section">
-      <img src="assets/burger-friends.jpg" alt="image of people eating" class="image">
-      <div class="select-meal">
-          <h2 class="nav">What are you looking for?</h2>
-          <div>
-            <input type="radio" id="Side"
-            name="drone" value="Side" class="radio-button">
-            <label for="Side">Side</label>
-          </div>
-          <div>
-            <input type="radio" id="Main Dish" name="drone" value="Main" class="radio-button">
-            <label for="Main Dish">Main Dish</label>
-          </div>
-          <div>
-            <input type="radio" id="Dessert" name="drone" value="louie" class="radio-button">
-            <label for="louie">Dessert</label>
-          </div>
-          <div>
-            <input type="radio" id="Entire Meal" name="drone" value="Entire Meal" class="radio-button">
-            <label for="louie">Entire Meal</label>
-          </div>
-          <button type="button" name="button" class="">LET'S COOK!</button>
+    <main>
+      <section class="select-meal">
+        <form action="" class="meal-options">
+          <h2>What are you looking for?*</h2>
+          <form class='meal-options'>
+          <input type='radio' name='selection' class='side 'id='side'>
+          <label for='side'>Side</label><br/>
+          <input type='radio' name='selection' class="main-dish" id='main'>
+          <label for='main-dish'>Main Dish</label><br/>
+          <input type='radio' name='selection' class='dessert 'id='Dessert'>
+          <label for='Dessert'>Dessert</label><br/>
+          <input type='radio' name='selection' class='entire-meal 'id='entire-meal'>
+          <label for='entire-meal'>Entire meal</label><br/>
+          <button class="letscook" id='lets-cook'>LET'S COOK!</button>
         <aside class="cook-pot">
-          <img src="assets/cookpot.svg" alt="" class="">
+          <img src="assets/cookpot.svg" alt="background image of people eating" class="img1">
+          <button type="button" class="clear hidden">CLEAR</button>
         </aside>
-        <button type="button" class="">CLEAR</button>
-      </div>
+      </form>
+      </section>
+      <img src="assets/burger-friends.jpg" alt="image of people eating" class="image">
     </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
