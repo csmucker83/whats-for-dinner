@@ -7,29 +7,35 @@
   <body>
     <header class="header">
       <h3 class="heading">What's for Dinner?</h3>
-      <button class="recipe-add">ADD A RECIPE</button>
+      <button class="recipe-add" id="recipe-add">ADD A RECIPE</button>
     </header>
     <main>
       <section class="select-meal">
         <form action="" class="meal-options">
           <h2>What are you looking for?*</h2>
           <form class='meal-options'>
+
           <input type='radio' name='selection' class='side 'id='side'>
           <label for='side'>Side</label><br/>
+
           <input type='radio' name='selection' class="main-dish" id='main'>
           <label for='main-dish'>Main Dish</label><br/>
-          <input type='radio' name='selection' class='dessert 'id='Dessert'>
+
+          <input type='radio' name='selection' class='dessert 'id='dessert'>
           <label for='Dessert'>Dessert</label><br/>
+
           <input type='radio' name='selection' class='entire-meal 'id='entire-meal'>
           <label for='entire-meal'>Entire meal</label><br/>
+
           <button class="letscook" id='lets-cook'>LET'S COOK!</button>
         <aside class="cook-pot">
           <img src="assets/cookpot.svg" alt="background image of people eating" class="img1">
-          <button type="button" class="clear hidden">CLEAR</button>
+          <button type="button" class="clear" id="clear">CLEAR</button>
         </aside>
       </form>
       </section>
-      <img src="assets/burger-friends.jpg" alt="image of people eating" class="image">
+      <div class="dish" id="dish"> </div>
+      <img src="assets/burger-friends.jpg" alt="image of people eating" id="image" class="image">
     </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
