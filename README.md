@@ -36,7 +36,7 @@
 
 ## Deployed Page
 
-Visit our published IdeaBox page [here](https://csmucker83.github.io/ideabox/)
+Visit our published What's for dinner? page [here](https://csmucker83.github.io/ideabox/)
 
 ## Possible Future Extensions
 
