@@ -1,16 +1,92 @@
-* {
+body {
   font-family: 'Roboto', sans-serif;
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+}
+
+.heading {
+  font-size: 1.4em;
 }
 
 header {
-  background-color: #0fb9b1;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 20px 4px 20px;
+  background-color: #0fb9b1
 }
 
-img {
-  background-image: 5px;
+.select-meal {
+  padding-left: 30px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background: rgba(225, 225, 225, .92);
+  width: 400px;
+  height: 300px;
+  display: flex;
+}
+
+.recipe-add {
+  cursor: pointer;
+  font-size: 1em;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  border-color: #0fb9b1;
+}
+
+.cook-pot {
+  align-items: center;
+  background-color: rgba(225, 225, 225, .9);
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  float: left;
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  position: fixed;
+  right: 9%;
+  top: 20%;
+}
+
+.img1 {
+  width: 45%;
+  height: 45%;
+  opacity: 65%;
+  margin: 15% 70% 0% 65%;
+  padding: 5% 0% 2% 6%;
+}
+
+.clear {
+  margin-left: 80%;
+  margin-bottom: 12px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.letscook {
+  background-color: #0fb9b1;
+  /* border: none; */
+  padding: 4px 30px;
+  margin: 30px 2px;
+}
+
+.image {
+  width: 100%;
+  height: 89.7%;
+}
+
+.meal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.radio-button {
+  width: 10px;
+  display: 1%;
+  justify-content: space-between;
 }
 
 /*
