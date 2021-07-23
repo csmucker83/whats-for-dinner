@@ -1,5 +1,5 @@
 # What's for Dinner
-<img width="127" alt="idea-box-logo" src="https://user-images.githubusercontent.com/80136642/121270129-f6117480-c875-11eb-9dfa-89e1beaaa762.png">
+<img width="127" alt="idea-box-logo" src="Screen Shot 2021-07-22 at 7.58.38 PM">
 
 ## Table of Contents
   - [Introduction](#introduction)
@@ -9,14 +9,13 @@
   - [Deployed Page](#deployed-page)
   - [Possible Future Extensions](#possible-future-extensions)
   - [Set Up](#set-up)
-  - [Organizational Resources](#organizational-resources)
   - [Sources](#sources)
   - [Contributors](#contributors)
   - [Project Specs](#project-specs)
 
 ## Introduction
 
-  Visit IdeaBox to store all your useful and not so useful ideas. Ideas to impress your friends with, ideas with purpose for later use, or just random thoughts; you've got a one stop shop for future reference.
+  What's for dinner is here to assist with your writer's block of food. Not sure what to eat simply use our randomly selected dish chooser. No need to bother telling anyone who had dessert for dinner for the third day in a row.
 
 ## Technologies
   - Javascript
@@ -25,33 +24,27 @@
 
 ## Features
 
-   - You are able to create and locally store ideas to return to at a later date.
-   - You can create a title and a body for your idea.
-   - If you have an idea you really like, then click the star on the right corner of the idea to favorite it.
-   - Also, if you have already fulfilled an idea or just don't like it anymore, you can delete it.
+   - You are able to search and randomly select meals that meet your fancy.
+   - You can select from various types of dishes.
 
 ## Illustrations
 
-![IdeaBox gif](https://user-images.githubusercontent.com/80136642/121288832-d770a500-c898-11eb-92bc-f449b748259a.gif)
+![What's for dinner gif](https://user-images.githubusercontent.com/80136642/121288832-d770a500-c898-11eb-92bc-f449b748259a.gif)
 
 ## Deployed Page
 
-Visit our published IdeaBox page [here](https://csmucker83.github.io/ideabox/)
+Visit our published What's for Dinner page [here](https://csmucker83.github.io/ideabox/)
 
 ## Possible Future Extensions
 
-  - Create a favorites section to view all of favorited ideas.
-  - Create search bar functionality to filter through and sort ideas.
+- You are able to create and locally store meal ideas for future cravings.
+- You can create a your own personal dishes based off the ingredients already in your home that best suited to your own palate.
 
 ## Set Up
 
 1. Fork this repo  
 2. Clone the repo to your local machine
-3. View the project in the browser by running open index.html in your terminal
-
-## Organizational Resources
-- [Trello Board](https://trello.com/b/aq7mVHoQ/ideabox)
-- [Wireframe](https://miro.com/app/board/o9J_lBUsMVU=/)
+3. View the project in the browser by running open index.html in your terminal.
 
 ## Sources
   - [MDN](http://developer.mozilla.org/en-US/)
@@ -62,4 +55,4 @@ Visit our published IdeaBox page [here](https://csmucker83.github.io/ideabox/)
   - [Christian Smucker](https://gist.github.com/csmucker83)
 
 ## Project Specs
-  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-1/ideabox-group.html)
+  - The project spec & rubric can be found [here](https://github.com/csmucker83/whats-for-dinner)
