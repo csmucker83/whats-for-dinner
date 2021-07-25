@@ -1,7 +1,7 @@
-var sides = ['Miso Glazed Carrots,'
+var sides = ['Miso Glazed Carrots',
 'Coleslaw',
 'Garden Salad',
-'Crispy Potatoes'
+'Crispy Potatoes',
 'Sweet Potato Tots',
 'Coconut Rice',
 'Caeser Salad',
@@ -30,7 +30,7 @@ var desserts = ['Apple Pie',
 'Eclairs'];
 
 
-mains = ['Spaghetti and Meatballs,'
+var mains = ['Spaghetti and Meatballs',
 'Pineapple Chicken',
 'Shakshuka',
 'Thai Yellow Curry',
