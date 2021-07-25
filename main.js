@@ -1,44 +1,80 @@
-var cookBtn = document.getElementById('lets-cook');
-var sidesBtn = document.getElementById('side');
-var dessertBtn = document.getElementById('dessert');
-var mainBtn = document.getElementById('main');
-var recipeBtn = document.getElementById('recipe-add');
-var clearBtn = document.getElementById('clear');
-var burgerImage = document.getElementById('image');
-var displayRecipe = document.getElementById('dish');
+var showRecipeBtn = document.getElementById('lets-cook')
+var sidesBtn = document.getElementById('side')
+var mainBtn = document.getElementById('main')
+var dessertBtn = document.getElementById('dessert')
+var recipeFormBtn = document.getElementById('recipe-add')
+var addNewBtn = document.getElementById('add-new')
+var clearBtn = document.getElementById('clear')
 
-var crockPot = document.querySelector('.img1');
+var crockPotBtn = document.querySelector('.img1')
+var displayedRecipe = document.getElementById('recipe')
 
-var showRecipe = document.getElementById('showRecipe');
+showRecipeBtn.addEventListener('click', showDish)
+recipeFormBtn.addEventListener('click', displayAddForm)
 
-cookBtn.addEventListener('click', letsCook);
-sidesBtn.addEventListener('click', dishBtn);
-dessertBtn.addEventListener('click', dishBtn);
-mainBtn.addEventListener('click', dishBtn;
-recipeBtn.addEventListener('click', makeDish);
-clearBtn.addEventListener('click', clearDish);
-burgerImage.addEventListener('click', imageFade);
-displayRecipe.addEventListener('click', showDish);
+clearBtn.addEventListener('click', clearRecipe)
+mainBtn.addEventListener('click', createBtn)
+sidesBtn.addEventListener('click', createBtn)
+dessertBtn.addEventListener('click', createBtn)
 
+function createBtn() {
+  showRecipeBtn.classList.add('fadeIn')
+}
+
+function showDish(e) {
+  var randomSide = sides[getRandomIndex(sides)];
+  var randomMain = mains[getRandomIndex(mains)];
+  var randomDessert = desserts[getRandomIndex(desserts)];
+  crockPotBtn.classList.toggle('hidden')
+  clearBtn.classList.toggle('fadeIn')
+  if (sidesBtn.checked) {
+    console.log(sidesBtn)
+    displayedRecipe.innerHTML = `
+      <h6 class='recipe'>Your dish will be:<br><center>${randomSide}</h6>`
+  } else if (mainBtn.checked) {
+      displayedRecipe.innerHTML = `
+        <h6 class='recipe'>Your dish will be:<br><center>${randomMain}</h6>`
+    } else {
+        displayedRecipe.innerHTML = `
+          <h6 class='recipe'>Your dish will be: <br><center>${randomDessert}</h6>`
+    }
+  }
+
+function displayAddForm() {
+  footer.classList.toggle('fadeIn');
+}
+
+function addRecipeToList() {
+  if (recipeType.value === 'side') {
+    sides.push(recipeName.value)
+  } else if (recipeType.value === 'main') {
+    mains.push(recipeName.value)
+  } else {
+    desserts.push(recipeName.value)
+  }
+}
+
+function displayNewRecipe () {
+  displayedRecipe.classList.remove('hidden');
+  if (!recipeType.value && !recipeName.value) {
+    addNewBtn.disabled = true;
+  } else {
+    crockPotBtn.classList.add('hidden');
+    clearBtn.classList.toggle('fadeIn');
+    displayedRecipe.innerHTML = `
+    <h5 class='recipe'>You should make:</h5>
+    <h3 class='main'>${recipeName.value}</h3>`
+  }
+  displayAddForm();
+  addNewBtn.disabled = false;
+}
+
+function clearRecipe() {
+  displayedRecipe.classList.add('hidden');
+  crockPotBtn.classList.remove('hidden');
+  clearBtn.classList.remove('fadeIn')
+}
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
-
-function makeDish() {
-  var side = sides[getRandomIndex(sides)];
-  var main = mains[getRandomIndex(mains)];
-  var dessert = desserts[getRandomIndex(desserts)];
-  crockPot.classList.toggle('hidden');
-  clearBtn.classList.toggle('fadeIn');
-  if (sidesBtn.checked) {
-    showRecipe.innerHTML = `<h4>This is your side: ${side}</h4>`
-  } else if (mainBtn.checked) {
-    showRecipe.innerHTML = `<h4>This is your main dish: ${main}</h4>`
-  } else (dessert.Btn){
-    showRecipe.innerHTML = `<h4>This is your dessert: ${dessert}</h4>`
-  }
-}
-
-
-//
