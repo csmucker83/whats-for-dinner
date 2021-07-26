@@ -1,11 +1,9 @@
 # What's for Dinner
-<img width="127" alt="idea-box-logo" src="Screen Shot 2021-07-22 at 7.58.38 PM">
 
 ## Table of Contents
   - [Introduction](#introduction)
   - [Technologies](#technologies)
   - [Features](#features)
-  - [Illustrations](#illustrations)
   - [Deployed Page](#deployed-page)
   - [Possible Future Extensions](#possible-future-extensions)
   - [Set Up](#set-up)
@@ -27,13 +25,9 @@
    - You are able to search and randomly select meals that meet your fancy.
    - You can select from various types of dishes.
 
-## Illustrations
-
-![What's for dinner gif](https://user-images.githubusercontent.com/80136642/121288832-d770a500-c898-11eb-92bc-f449b748259a.gif)
-
 ## Deployed Page
 
-Visit our published What's for Dinner page [here](https://csmucker83.github.io/ideabox/)
+Visit our published What's for Dinner page [here](https://csmucker83.github.io/whats-for-dinner/)
 
 ## Possible Future Extensions
 
